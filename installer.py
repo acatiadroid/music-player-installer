@@ -81,7 +81,7 @@ def install():
     shortcut = shell.CreateShortcut(path)
     shortcut.Targetpath = target
     shortcut.WorkingDirectory = wdir
-    shortcut.IconLocation = dest + r"\music-player\player\Assets\musical_note.ico"
+    shortcut.IconLocation = dest + r"\music-player\data\assets\main.ico"
     shortcut.save()
 
     if cvar.get() == 1:
@@ -94,7 +94,7 @@ def install():
         shortcut = shell.CreateShortcut(path)
         shortcut.Targetpath = target
         shortcut.WorkingDirectory = wdir
-        shortcut.IconLocation = dest + r"\music-player\player\Assets\musical_note.ico"
+        shortcut.IconLocation = dest + r"\music-player\data\assets\main.ico"
         shortcut.save()
 
         shortcuts.append("Desktop")
